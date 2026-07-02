@@ -1,25 +1,98 @@
-# General
+# -------------------
+# macOS system files
+# -------------------
 .DS_Store
-__MACOSX/
 .AppleDouble
 .LSOverride
-Icon[]
-
-# Thumbnails
+Icon
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# -------------------
+# Local secrets — never commit credentials or private keys
+# -------------------
+*.env
+.env
+.env.local
+.env.*.local
+service-account-key.json
+# Snowflake / generic private keys
+*.p8
+*.pem
+*.key
+secrets/
+
+# -------------------
+# Node.js
+# -------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# -------------------
+# Python
+# -------------------
+__pycache__/
+*.pyc
+.venv/
+
+# Output of `npm pack`
+*.tgz
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build / dist
+dist/
+build/
+.cache/
+.next/
+.out/
+.nyc_output/
+
+# Coverage
+coverage/
+*.lcov
+
+# -------------------
+# Logs
+# -------------------
+logs
+*.log
+logs/**/*.log
+
+# -------------------
+# Editors / IDEs
+# -------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------
+# Markdown / Docs
+# -------------------
+# (Optional: if people paste screenshots into docs/)
+*.tmp
+*.bak
+*.orig
+
+# -------------------
+# Misc
+# -------------------
+.env
+.env.*        # local env files
+*.local
+# -------------------
+# Claude Code
+# -------------------
+.claude/
